@@ -8,5 +8,6 @@ FROM webdevops/nginx:alpine
 ENV WEB_NO_CACHE_PATTERN="\.(css|js|gif|png|jpg|svg|json|xml)$"
 
 COPY conf/ /opt/docker/
+COPY content/ /wwwroot/
 
 EXPOSE 80 443
